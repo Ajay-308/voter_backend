@@ -1,0 +1,20 @@
+voting app --> web app where user can vote to there candidates
+
+kya kya chiye isme??
+
+1. user -> sign in/ up --> register
+2. total candidates list
+3. 1 vote  by 1 person
+4. manage route to show list of candidates and total votes for it
+5. user ke pass validation ke liye kuch hone chiye (us adhar) :- random number 16 digit kar dunga(but unique)
+6. admin route -> to manage all these stuff , cannot vote
+7. can change password/ profile image (if have)
+8. login with that random_number + password
+
+Routes ->?
+
+1. user auth -->[ /signup: post , /login:post ]
+2. voting -->[/candidates:GET, /Vote/:candidates :Post --> view karega particualr ke votes  ]
+3. vote count-> [/vote/counts:GET ]
+4. user profile -> [/profile :get ,  /profile/password:PUT(to change it)]
+5. Admin ->to manage [/ candidates:Post, /candidates/:candidatesId:PUT , /candidates/:candidates: Delete ]
